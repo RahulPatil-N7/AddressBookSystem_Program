@@ -2,13 +2,15 @@ package com.bridgelabz.AddressBookSystem;
 
 public class ContactList {
 	private String firstName;
-    private String lastName ;
-    private String city;
+    private  String lastName ;
+    private  String city;
     private String state;
-    private String pin;
-    private String mobileNumber;
+    private  String pin;
+    private  String mobileNumber;
     private String email;
-
+ 
+    
+//Getter Methods
     public String getFirstName() {
         return firstName;
     }
@@ -37,6 +39,7 @@ public class ContactList {
         return email;
     }
 
+    //Setter Methods
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -77,8 +80,9 @@ public class ContactList {
                 ", email='" + email + '\'' +
                 '}';
     }
-
-    public ContactList(String firstName, String lastName, String city, String state, String pin, String mobileNumber, String email) {
+    
+//Parameterized constructor 
+  public ContactList(String firstName, String lastName, String city, String state, String pin, String mobileNumber, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.city = city;
@@ -87,6 +91,4 @@ public class ContactList {
         this.mobileNumber = mobileNumber;
         this.email = email;
     }
-}
-
 }
